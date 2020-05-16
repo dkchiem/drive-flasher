@@ -18,7 +18,7 @@ After installing the cli, you are ready to use it.
 
 1. Insert your drive
 2. If the following alert pops up just after inserting the drive, press on "**Initialize...**" : <img src="screenshot.png" height="200" />
-3. Run the following command (`sudo` is needed to do the flashing):
+3. Run the following command in the Terminal (`sudo` is needed to do the flashing):
 
    > Note that it will also wipe everything on the drive.
 
