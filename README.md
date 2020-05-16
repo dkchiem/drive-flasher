@@ -17,7 +17,7 @@ After installing the cli, you are ready to use it.
 > The cli has only been tested on _macOS Catalina_ with an _Ubuntu_ ISO image.
 
 1. Insert your drive
-2. If the following alert pops up just after inserting the drive, press on "**Initialize...**" : <img src="screenshot.png" height="200" />
+2. If the following alert pops up just after inserting the drive, press on "**Initialize...**" : <img src="https://raw.githubusercontent.com/Doudou8/drive-flasher/master/screenshot.png" height="200" />
 3. Run the following command in the Terminal (`sudo` is needed to do the flashing):
 
    > Note that it will also wipe everything on the drive.
@@ -28,7 +28,7 @@ After installing the cli, you are ready to use it.
 
 4. Respond to the questions asked...
 5. Let it do its work, go get a cup of coffee!
-6. This alert will pop up when the flashing is done. Press on "**Ignore**" :<img src="screenshot.png" height="200" />
+6. This alert will pop up when the flashing is done. Press on "**Ignore**" :<img src="https://raw.githubusercontent.com/Doudou8/drive-flasher/master/screenshot.png" height="200" />
 7. Remove the drive and use it!
 
 ## Author
