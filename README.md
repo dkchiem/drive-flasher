@@ -1,6 +1,6 @@
 # drive-flasher
 
-**drive-flasher** is a cli to flash an OS on a removable drive. It is designed to be simple to use on your mac.
+**drive-flasher** is a cli to flash an OS onto a removable drive. It is designed to be simple to use on your mac.
 
 ## Installation
 
