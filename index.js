@@ -49,6 +49,7 @@ async function main() {
       message: 'Are you sure you want to flash this drive? This wipe everything on the it.',
     },
   ]);
+
   if (!eraseConfirm) process.exit(0);
   const tempFilesPath = __dirname + '/temp';
   const dmgPartialPath = tempFilesPath + '/' + files.getFileName(imageFile);
