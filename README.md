@@ -14,20 +14,22 @@ After installing the cli, you are ready to use it.
 
 ## Usage
 
-> The cli has been tested on _macOS Catalina_ with a _Ubuntu_ ISO image.
+> The cli has only been tested on _macOS Catalina_ with an _Ubuntu_ ISO image.
 
-In order to flash an OS on your drive, the following command will ask you these questions:
+1. Insert your drive
+2. If the following alert pops up just after inserting the drive, press on "**Initialize...**" : <img src="screenshot.png" height="200" />
+3. Run the following command (`sudo` is needed to do the flashing):
 
-- Which removable drive do you want to use?
-- What's the path to your image file?
+   > Note that it will also wipe everything on the drive.
 
-It will then do its work to flash the OS on the drive. Note that it will also wipe everything on the drive.
+   ```bash
+   $ sudo drive-flasher
+   ```
 
-Command:
-
-```bash
-$ drive-flasher
-```
+4. Respond to the questions asked...
+5. Let it do its work, go get a cup of coffee!
+6. This alert will pop up when the flashing is done. Press on "**Ignore**" :<img src="screenshot.png" height="200" />
+7. Remove the drive and use it!
 
 ## Author
 

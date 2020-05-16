@@ -12,9 +12,27 @@
     "colors": "^1.4.0",
     "drivelist": "^8.0.10",
     "inquirer": "^7.1.0",
-    "ora": "^4.0.4"
+    "ora": "^4.0.4",
+    "update-notifier": "^4.1.0"
   },
   "devDependencies": {
     "prettier": "^2.0.5"
-  }
+  },
+  "bin": {
+    "drive-flasher": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Doudou8/drive-flasher/issues"
+  },
+  "homepage": "https://github.com/Doudou8/drive-flasher",
+  "keywords": [
+    "CLI",
+    "generator",
+    "cli",
+    "drive",
+    "macos",
+    "flash",
+    "burn",
+    "image"
+  ]
 }

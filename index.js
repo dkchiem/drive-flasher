@@ -1,7 +1,10 @@
+#!/usr/bin/env node
+
 // drive-flasher
 const drives = require('./lib/drives');
 const shell = require('./lib/shell');
 const files = require('./lib/files');
+const { checkUpdate } = require('./lib/update');
 // npm
 const inquirer = require('inquirer');
 const exec = require('child_process').exec;
@@ -89,6 +92,7 @@ function main() {
                                     setTimeout(() => {
                                       spinner.stop();
                                       console.log('Thank you for using drive-flasher!'.blue.bold);
+                                      checkUpdate();
                                     }, 1000);
                                   });
                               });
