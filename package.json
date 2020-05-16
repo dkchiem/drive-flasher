@@ -4,7 +4,7 @@
   "description": "Flash OS on drive",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "./index.js"
   },
   "author": "Vu Dang Khoa Chiem",
   "license": "MIT",
