@@ -1,10 +1,10 @@
 {
   "name": "drive-flasher",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Flash OS on drive",
   "main": "index.js",
   "scripts": {
-    "start": "./index.js"
+    "start": "node index.js"
   },
   "author": "Vu Dang Khoa Chiem",
   "license": "MIT",

@@ -35,11 +35,8 @@ async function main() {
       name: 'imageFile',
       message: "What's the path to your image file",
       validate(path) {
-        if (!path) {
-          return 'Please enter the path to your image file';
-        } else if (!files.checkPath(path)) {
-          return `${path} path is invalid`;
-        }
+        if (!path) return 'Please enter the path to your image file';
+        if (!files.checkPath(path.trim())) return `${path.trim()} path is invalid`;
         return true;
       },
     },
@@ -63,7 +60,9 @@ async function main() {
   );
   // Convert temp folder
   spinner.text = 'Converting image to .dmg file...';
-  await shell.execCommand(`rm ${tempFilesPath}/*`);
+  if (files.pathExists(tempFilesPath)) {
+    await shell.execCommand(`rm -r ${tempFilesPath}`);
+  }
   await shell.execCommand(`mkdir -p ${tempFilesPath}`);
   // Convert image to .dmg file
   await shell.execCommand(`hdiutil convert -format UDRW -o ${dmgPartialPath} ${imageFile}`);
