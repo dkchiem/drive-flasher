@@ -63,6 +63,7 @@ async function main() {
   );
   // Convert temp folder
   spinner.text = 'Converting image to .dmg file...';
+  await shell.execCommand(`rm ${tempFilesPath}/*`);
   await shell.execCommand(`mkdir -p ${tempFilesPath}`);
   // Convert image to .dmg file
   await shell.execCommand(`hdiutil convert -format UDRW -o ${dmgPartialPath} ${imageFile}`);
@@ -72,9 +73,6 @@ async function main() {
   // Flash drive
   spinner.text = 'Flashing drive... (This will take a few minutes)';
   await shell.execCommand(`sudo dd if=${dmgFullPath} of=${removableDrives[driveIndex].raw} bs=1m`);
-  // Clean up temp files created
-  spinner.text = 'Cleaning created temp files...';
-  await shell.execCommand(`rm ${dmgFullPath}`);
   spinner.text = 'Ejecting drive...';
   // Eject drive
   await shell.execCommand(`diskutil eject ${removableDrives[driveIndex].device}`);
