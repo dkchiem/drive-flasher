@@ -1,5 +1,7 @@
 # drive-flasher
 
+[![npm version](https://badge.fury.io/js/drive-flasher.svg)](https://www.npmjs.com/package/make-icns) [![license](https://img.shields.io/github/license/Doudou8/drive-flasher)](https://github.com/Doudou8/drive-flasher/blob/master/LICENSE) ![dependencies](https://david-dm.org/Doudou8/drive-flasher.svg?theme=shields.io)
+
 **drive-flasher** is a cli to flash an OS onto a removable drive. It is designed to be simple to use on your mac.
 
 ## Installation

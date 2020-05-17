@@ -1,6 +1,6 @@
 {
   "name": "drive-flasher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Flash OS on drive",
   "main": "index.js",
   "scripts": {

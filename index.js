@@ -38,7 +38,7 @@ async function main() {
         if (!path) {
           return 'Please enter the path to your image file';
         } else if (!files.checkPath(path)) {
-          return 'Invalid path';
+          return `${path} path is invalid`;
         }
         return true;
       },
