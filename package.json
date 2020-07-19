@@ -16,6 +16,11 @@
     "ora": "^4.0.4",
     "update-notifier": "^4.1.0"
   },
+  "files": [
+    "lib",
+    "index.js",
+    "LICENSE"
+  ],
   "devDependencies": {
     "prettier": "^2.0.5"
   },
