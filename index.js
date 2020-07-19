@@ -43,7 +43,7 @@ async function main() {
     {
       type: 'confirm',
       name: 'eraseConfirm',
-      message: 'Are you sure you want to flash this drive? This wipe everything on the it.',
+      message: 'Are you sure you want to flash this drive? This will wipe everything on it.',
     },
   ]);
 
